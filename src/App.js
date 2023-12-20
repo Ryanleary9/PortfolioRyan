@@ -3,12 +3,17 @@ import chopImage from "./chop.jpg";
 import emailjs from "@emailjs/browser";
 import React, { useRef } from "react";
 import { Slide } from "react-awesome-reveal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import "@fontsource/readex-pro";
 
 function App() {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    console.log(form.current);
 
     emailjs
       .sendForm(
@@ -401,9 +406,8 @@ function App() {
                     href="https://github.com/Ryanleary9"
                     className="contact-card"
                   >
-                    <img
-                      src="img/github.png"
-                      alt=""
+                    <FontAwesomeIcon
+                      icon={faGithub}
                       className="contact-images"
                     />
                     <p>My Github</p>
@@ -412,17 +416,15 @@ function App() {
                     href="https://www.linkedin.com/in/ryanlearyzafra/"
                     className="contact-card"
                   >
-                    <img
-                      src="img/linkedin.png"
-                      alt=""
+                    <FontAwesomeIcon
+                      icon={faLinkedin}
                       className="contact-images"
                     />
                     <p>My Linkedin</p>
                   </a>
                   <a href="#myForm" className="contact-card">
-                    <img
-                      src="img/phone.png"
-                      alt=""
+                    <FontAwesomeIcon
+                      icon={faPhone}
                       className="contact-images"
                     />
                     <p>+34 644 44 95 45</p>
@@ -430,27 +432,21 @@ function App() {
                 </span>
               </span>
             </Slide>
-            <Slide direction="right" triggerOnce={true}>
-              <form ref={form} onSubmit={sendEmail} id="myForm">
-                <span className="contact-form">
-                  <label>Name</label>
-                  <input
-                    type="text"
-                    name="user_name"
-                    className="contact-input"
-                  />
-                  <label>Email</label>
-                  <input
-                    type="email"
-                    name="user_email"
-                    className="contact-input"
-                  />
-                  <label>Message</label>
-                  <textarea name="message" className="message-input" />
-                  <input type="submit" value="Send" className="contact-send" />
-                </span>
-              </form>
-            </Slide>
+            <form ref={form} onSubmit={sendEmail} id="myForm">
+              <span className="contact-form">
+                <label>Name</label>
+                <input type="text" name="user_name" className="contact-input" />
+                <label>Email</label>
+                <input
+                  type="email"
+                  name="user_email"
+                  className="contact-input"
+                />
+                <label>Message</label>
+                <textarea name="message" className="message-input" />
+                <input type="submit" value="Send" className="contact-send" />
+              </span>
+            </form>
           </span>
         </span>
       </span>

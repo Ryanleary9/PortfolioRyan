@@ -1,7 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+:root {
+  font-size: 18px;
+}
 @font-face {
   font-family: "Inknut Antiqua Bold";
   src: url("../InknutAntiqua-Bold.ttf") format("truetype");
@@ -9,14 +11,13 @@ html {
 }
 
 body {
-  font-family: "Inknut Antiqua Bold", sans-serif;
+  font-family: "Readex Pro";
 }
 ul {
   list-style: none;
   display: flex;
   gap: 5rem;
   justify-content: flex-end;
-  padding-right: 6rem;
 }
 
 .position {
@@ -40,7 +41,7 @@ ul {
 .my-photo {
   height: 30rem;
   margin-bottom: 1rem;
-  border-radius: 20%;
+  border-radius: 7%;
 }
 
 .presection {
@@ -72,7 +73,7 @@ ul {
   padding-left: 10rem;
   padding-top: 9rem;
   padding-right: 25rem;
-  height: 100vh;
+  height: 80vh;
   background-color: #afa0cb;
   color: #eeedf3;
   display: flex;
@@ -91,9 +92,11 @@ ul {
   border-radius: 50%;
   transition: all 300ms;
   position: relative;
+  border: 2px black solid;
 }
 .hobbie:hover {
   transform: scale(1.5);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .header-hl {
@@ -113,11 +116,6 @@ ul {
   align-items: center;
 }
 
-.projectImages {
-  height: 17rem;
-  border-radius: 10% 10% 0 0;
-}
-
 .projects-title {
   display: flex;
   text-align: center;
@@ -133,7 +131,10 @@ ul {
   height: 45rem;
   background-color: #afa0cb;
   flex-direction: column;
-  border-radius: 10%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px black solid;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .project-title {
@@ -202,7 +203,10 @@ h4 {
 }
 
 .skills {
+  display: flex;
+  flex-direction: column;
   padding-top: 4rem;
+  gap: 1rem;
 }
 
 .skill-title {
@@ -220,13 +224,24 @@ h4 {
   gap: 1rem;
 }
 
-.contact-input {
-  height: 1.5rem;
-  width: 20rem;
+.contact-input,
+.message-input {
+  width: 80%; /* Adjust the width as needed */
+  max-width: 20rem; /* Set a maximum width if needed */
+  height: 1.5rem; /* Adjust the height as needed */
   background: none;
   border-radius: 5%;
   border: 3px #afa0cb solid;
   font-size: medium;
+  margin: 0 auto; /* Center the input horizontally */
+}
+
+.message-input {
+  height: 10rem;
+  width: 30rem; /* Adjust the width as needed */
+  max-width: 20rem; /* Set a maximum width if needed */
+  resize: none;
+  margin: 0 auto; /* Center the textarea horizontally */
 }
 
 .contact-send {
@@ -236,27 +251,20 @@ h4 {
   border: 3px #afa0cb solid;
 }
 
-.message-input {
-  width: 20rem;
-  height: 10rem;
-  resize: none;
-  background: none;
-  border-radius: 5%;
-  border: 3px #afa0cb solid;
-  font-size: large;
-}
-
 form {
   border: 2px black solid;
   width: 30rem;
   height: 32rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center; /* Center the form horizontally */
+  justify-content: center; /* Center the form vertically */
   background-color: #eeedf3;
   border-radius: 5%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  gap: 1rem;
 }
 
 .section4 {
@@ -276,6 +284,7 @@ label {
   height: 5rem;
   width: 4rem;
   padding-left: 3rem;
+  color: rgb(48, 45, 45);
 }
 
 .contact-card {
@@ -289,15 +298,13 @@ label {
   color: #eeedf3;
   text-align: center;
   border-radius: 10%;
+  background-color: #a079eb;
 }
 
 .contact-card:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transform: scale(1.05);
-  border-color: #9268e0;
+  border-color: black;
 }
 
 .contact-links {
@@ -314,4 +321,206 @@ label {
 
 .contact-title {
   color: #eeedf3;
+}
+
+.contact-form2 {
+  display: flex;
+}
+
+.section3,
+.section4 {
+  padding-bottom: 20vh; /* Añadir espacio adicional en la parte inferior */
+}
+
+/* Ajustes para la sección de proyectos */
+.projects-on-list {
+  margin-bottom: 5rem; /* Añadir un margen para separar los proyectos */
+}
+
+.links,
+.links2 {
+  gap: 3rem;
+  /* Aumentar la separación entre los enlaces de proyectos */
+}
+
+.projectImages {
+  height: 15rem; /* Ajustar el tamaño de las imágenes de los proyectos */
+  width: 28rem; /* Mantener la proporción de la imagen */
+}
+
+.tech-used {
+  height: 3rem; /* Reducir el tamaño de las imágenes de tecnologías */
+  width: auto; /* Mantener la proporción de la imagen */
+}
+.projects-on-list {
+  min-height: 25rem;
+}
+
+.tech-used {
+  height: 3rem;
+  width: auto;
+}
+@media (max-width: 600px) {
+  .header {
+    gap: 2rem;
+    padding-right: 2rem;
+  }
+
+  .section1,
+  .presection2,
+  .skill-section,
+  .section3,
+  .section4 {
+    padding: 2rem;
+  }
+
+  .my-photo {
+    height: 20rem; /* Ajustar según sea necesario */
+    width: auto;
+  }
+
+  .about-me,
+  .hobbies,
+  .projects-list,
+  .section4-data {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .skill,
+  .projects-on-list,
+  .contact-card,
+  .contact-form,
+  form {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .project-title,
+  .skill-title,
+  .contact-title {
+    text-align: center;
+  }
+
+  .contact-input,
+  .message-input {
+    width: 100%;
+    margin: 0;
+  }
+
+  .message-input {
+    width: 100%;
+  }
+
+  .contact-form {
+    align-items: center;
+  }
+
+  .hobbie {
+    width: 50%; /* Ajustar para que se adapte mejor a pantallas pequeñas */
+    height: auto;
+    margin: 0 auto; /* Centrar el hobbie */
+  }
+
+  /* Mantener los tamaños originales de skills y links de contacto */
+  .skill-image,
+  .project-links,
+  .contact-images {
+    height: 3rem; /* o el tamaño original que tenían */
+  }
+
+  .projects-on-list {
+    margin-bottom: 3rem; /* Ajustar el margen en pantallas pequeñas */
+  }
+
+  .links,
+  .links2 {
+    align-items: center;
+  }
+
+  .projectImages {
+    height: 10rem; /* Tamaño más pequeño para pantallas pequeñas */
+  }
+
+  .tech-used {
+    height: 2rem; /* Tamaño más pequeño para las imágenes de tecnologías en pantallas pequeñas */
+  }
+  .projects-on-list {
+    min-height: 20rem;
+  }
+
+  .projectImages {
+    height: 10rem;
+  }
+
+  .tech-used {
+    height: 2rem;
+  }
+
+  .section3 {
+    height: calc(100vh + 80vh);
+  }
+
+  .projects-on-list {
+    min-height: 20rem;
+  }
+
+  .projectImages {
+    height: 13rem;
+  }
+
+  .tech-used {
+    height: 2rem;
+  }
+
+  .contact-links {
+    margin-top: 5rem;
+  }
+  .skill-section {
+    height: calc(100vh + 60vh);
+  }
+  .section4 {
+    height: calc(100vh + 60vh);
+  }
+
+  .section2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-images {
+    padding-left: 0.5rem;
+  }
+
+  .projects-on-list {
+    width: 27rem;
+  }
+  .section1 {
+    flex-direction: column-reverse;
+  }
+  .my-photo {
+    height: 25rem;
+  }
+
+  .aditional-info {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .presection2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .hobbie {
+    height: 9rem;
+    width: 9rem;
+  }
+
+  .presection2 {
+    height: calc(100vh + 80vh);
+    gap: 10rem;
+  }
+  /* Puedes agregar más ajustes aquí según sea necesario */
 }
