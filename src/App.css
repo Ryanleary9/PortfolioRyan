@@ -1,0 +1,317 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Inknut Antiqua Bold";
+  src: url("../InknutAntiqua-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+body {
+  font-family: "Inknut Antiqua Bold", sans-serif;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+  justify-content: flex-end;
+  padding-right: 6rem;
+}
+
+.position {
+  color: #afa0cb;
+}
+
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 7rem;
+}
+
+.myself {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-photo {
+  height: 30rem;
+  margin-bottom: 1rem;
+  border-radius: 20%;
+}
+
+.presection {
+  display: flex;
+  flex-direction: column;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50rem;
+}
+
+.aditional-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50rem;
+  gap: 1rem;
+}
+
+.presection2 {
+  padding-left: 10rem;
+  padding-top: 9rem;
+  padding-right: 25rem;
+  height: 100vh;
+  background-color: #afa0cb;
+  color: #eeedf3;
+  display: flex;
+  justify-content: space-between;
+  gap: 20rem;
+}
+.hobbies {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hobbie {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  transition: all 300ms;
+  position: relative;
+}
+.hobbie:hover {
+  transform: scale(1.5);
+}
+
+.header-hl {
+  text-decoration: none;
+  color: black;
+}
+
+.header-hl:hover {
+  color: #afa0cb;
+}
+
+.section3 {
+  height: 100vh;
+  background-color: #eeedf3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectImages {
+  height: 17rem;
+  border-radius: 10% 10% 0 0;
+}
+
+.projects-title {
+  display: flex;
+  text-align: center;
+  color: #afa0cb;
+}
+
+.projects-list {
+  display: flex;
+}
+
+.projects-on-list {
+  display: flex;
+  height: 45rem;
+  background-color: #afa0cb;
+  flex-direction: column;
+  border-radius: 10%;
+}
+
+.project-title {
+  display: flex;
+  justify-content: center;
+}
+h4 {
+  text-align: center;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tech-used {
+  height: 4rem;
+}
+
+.project-links {
+  padding-top: 4rem;
+  height: 3rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.links2 {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 4rem;
+}
+
+.skill-section {
+  background-color: #afa0cb;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #eeedf3;
+}
+
+.skill-title {
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.skill-image {
+  height: 3rem;
+}
+
+.skill-container {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-evenly;
+}
+
+.skills {
+  padding-top: 4rem;
+}
+
+.skill-title {
+  text-align: center;
+}
+
+.section4 {
+  background-color: #afa0cb;
+  height: 80vh;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-input {
+  height: 1.5rem;
+  width: 20rem;
+  background: none;
+  border-radius: 5%;
+  border: 3px #afa0cb solid;
+  font-size: medium;
+}
+
+.contact-send {
+  width: 5rem;
+  color: #afa0cb;
+  background-color: #eeedf3;
+  border: 3px #afa0cb solid;
+}
+
+.message-input {
+  width: 20rem;
+  height: 10rem;
+  resize: none;
+  background: none;
+  border-radius: 5%;
+  border: 3px #afa0cb solid;
+  font-size: large;
+}
+
+form {
+  border: 2px black solid;
+  width: 30rem;
+  height: 32rem;
+  display: flex;
+  justify-content: center;
+  background-color: #eeedf3;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.section4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+  text-align: center;
+}
+
+label {
+  color: #9268e0;
+}
+
+.contact-images {
+  padding-top: 2rem;
+  height: 5rem;
+  width: 4rem;
+  padding-left: 3rem;
+}
+
+.contact-card {
+  display: flex;
+  height: 10rem;
+  width: 10rem;
+  border: 2px black solid;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: #eeedf3;
+  text-align: center;
+  border-radius: 10%;
+}
+
+.contact-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  transform: scale(1.05);
+  border-color: #9268e0;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section4-data {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.contact-title {
+  color: #eeedf3;
+}
