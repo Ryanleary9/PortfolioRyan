@@ -78,7 +78,7 @@ ul {
   background-color: #afa0cb;
   color: #eeedf3;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 20rem;
 }
 .hobbies {
