@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import "@fontsource/readex-pro";
+import Swal from "sweetalert2";
 
 function App() {
   const form = useRef();
@@ -32,6 +33,12 @@ function App() {
       );
     var allInputs = document.querySelectorAll("input");
     allInputs.forEach((singleInput) => (singleInput.value = ""));
+    var resetMessage = document.querySelectorAll("textarea");
+    resetMessage.forEach((singleInput) => (singleInput.value = ""));
+    Swal.fire({
+      title: "Message Sent!",
+      icon: "success",
+    });
   };
 
   return (
