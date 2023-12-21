@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 :root {
   font-size: 18px;
@@ -12,7 +13,6 @@ html {
 
 body {
   font-family: "Readex Pro";
-  padding-right: 3rem;
 }
 ul {
   list-style: none;
@@ -44,6 +44,7 @@ ul {
   height: 30rem;
   margin-bottom: 1rem;
   border-radius: 7%;
+  border: 2px black solid;
 }
 
 .presection {
@@ -99,6 +100,10 @@ ul {
 .hobbie:hover {
   transform: scale(1.5);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.header {
+  padding-right: 3rem;
 }
 
 .header-hl {
@@ -377,6 +382,7 @@ label {
   .section3,
   .section4 {
     padding: 2rem;
+    width: auto;
   }
 
   .my-photo {
@@ -485,6 +491,7 @@ label {
   }
   .skill-section {
     height: calc(100vh + 60vh);
+    padding-right: 2rem;
   }
   .section4 {
     height: calc(100vh + 60vh);
@@ -527,5 +534,10 @@ label {
     height: calc(100vh + 80vh);
     gap: 10rem;
   }
+
+  .about-me {
+    width: 27rem;
+  }
+
   /* Puedes agregar más ajustes aquí según sea necesario */
 }

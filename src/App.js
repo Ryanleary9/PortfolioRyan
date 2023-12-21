@@ -1,5 +1,4 @@
 import "./App.css";
-import chopImage from "./chop.jpg";
 import emailjs from "@emailjs/browser";
 import React, { useRef } from "react";
 import { Slide } from "react-awesome-reveal";
@@ -74,7 +73,7 @@ function App() {
             <h3 className="position">Fullstack Developer</h3>
           </span>
 
-          <img src={chopImage} alt="" className="my-photo" />
+          <img src="img/me.jpg" alt="" className="my-photo" />
         </span>
 
         <span className="presection2">
