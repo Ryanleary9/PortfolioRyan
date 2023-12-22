@@ -335,7 +335,7 @@ function App() {
             </Slide>
             <Slide direction="up" triggerOnce={true}>
               <li className="projects-on-list">
-                <a href="https://pokedex-46u1t84px-ryans-projects-f87ddd02.vercel.app">
+                <a href="https://pokedex-two-kohl.vercel.app/">
                   <img
                     src="/img/pokedax.png"
                     alt=""
